@@ -21,7 +21,7 @@ import javax.sql.DataSource;
 @Configuration
 @ComponentScan("com.vorsin.library")
 @EnableWebMvc
-@PropertySource("classpath: database.properties")
+@PropertySource("classpath:database.properties")
 public class SpringConfig implements WebMvcConfigurer {
 
     private final ApplicationContext applicationContext;
@@ -64,6 +64,7 @@ public class SpringConfig implements WebMvcConfigurer {
         managerDataSource.setUrl(environment.getProperty("url"));
         managerDataSource.setUsername(environment.getProperty("username"));
         managerDataSource.setPassword(environment.getProperty("password"));
+
         return managerDataSource;
     }
 
