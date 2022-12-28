@@ -1,4 +1,4 @@
-package com.vorsin.library.dao;
+package com.vorsin.library.dao.mappers;
 
 import com.vorsin.library.models.Book;
 import org.springframework.jdbc.core.RowMapper;

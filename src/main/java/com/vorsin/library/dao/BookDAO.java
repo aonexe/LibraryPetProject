@@ -1,5 +1,7 @@
 package com.vorsin.library.dao;
 
+import com.vorsin.library.dao.mappers.BookMapper;
+import com.vorsin.library.dao.mappers.PersonMapper;
 import com.vorsin.library.models.Book;
 import com.vorsin.library.models.Person;
 import org.springframework.beans.factory.annotation.Autowired;
